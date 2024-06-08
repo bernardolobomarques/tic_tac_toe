@@ -1,2 +1,2 @@
 # Tic Tac Toe
-Made using pygmae in order to learn the library
+Made using pygame in order to learn the library

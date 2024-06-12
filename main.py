@@ -145,13 +145,14 @@ def loop():
                     if not spaces[box[0]-1]:
                         draw_symbol(box, screen)
                         if is_player_cross:
-                            spaces[box[0]-1] = 1
-                        else:
                             spaces[box[0]-1] = 2
+                        else:
+                            spaces[box[0]-1] = 1
         else:
-            screen.winner(control)
-            # time.sleep(5)
-            # break
+            for _ in range(10):
+                screen.winner(control)
+                time.sleep(5)
+            break
 
         pygame.time.Clock().tick(60)
 
